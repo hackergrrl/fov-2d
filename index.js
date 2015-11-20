@@ -9,6 +9,7 @@ module.exports = function (at, facing, fov, target) {
   vec2FromTo(dirToTarget, at, target)
 
   var dot = vec2.dot(facingNorm, dirToTarget)
+  dot = Math.max(-1.0, Math.min(dot, 1.0))
   var relAng = Math.acos(dot)
 
   return relAng < fov
