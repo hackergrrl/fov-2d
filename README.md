@@ -2,10 +2,10 @@
 
 > Test whether a point is in an observer's field-of-view.
 
+![fov](http://noffle.github.io/fov-2d/illustration.png)
 
-## Background
-
-![fov](https://i.ytimg.com/vi/mBGUY7EUxXQ/maxresdefault.jpg)
+Given the location, heading, and field-of-view (as an angle) of an observer's
+eye, determine whether the target is visible (the blue triangle).
 
 
 ## Installation
@@ -55,3 +55,10 @@ var fov = require('fov-2d')
 * `targetPos` - origin of the target the eye is trying to test the visibility of
 
 Returns `true` if the target is within the eye's FOV, and false otherwise.
+
+
+## More
+
+This module can be readily combined with modules like
+[raycast-2d-tilemap](https://github.com/noffle/raycast-2d-tilemap) to check for
+solid tiles in a tilemap to determine visibility.
