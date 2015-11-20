@@ -1,7 +1,7 @@
 {
   "name": "fov-2d",
   "description": "check whether a point is in an observer's field-of-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "git://github.com/noffle/fov-2d.git"
   },
