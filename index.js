@@ -3,7 +3,7 @@ var vec2 = require('gl-vec2')
 var facingNorm = vec2.create()
 var dirToTarget = vec2.create()
 
-module.exports = function (at, facing, target, fov) {
+module.exports = function (at, facing, fov, target) {
   vec2.normalize(facingNorm, facing)
 
   vec2FromTo(dirToTarget, at, target)
